@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			header{
+				width: 100%;
+				height:5rem;
+				background-color: #FF8A00;
+				display: flex;
+				justify-content: center;
+			}
+			.hea{
+				width: 85%;
+				height:5rem;
+				display: flex;
+				justify-content: space-between;
+				
+			}
+			.hea .img1{
+				width: 40%;
+				height: 5rem;
+				display: flex;
+				align-items: center;
+			}
+			.hea .img2{
+				width:30%;
+				height: 5rem;
+				/*border:1px solid blue ;*/
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+			}
+			.hea .img2 span{
+				display: inline-block;
+				width: 35%;
+				height: 5rem auto;
+			}
+			.hea .img2 span img{
+				width: 3rem;
+				height: 3rem;
+			}
+			section{
+				width: 100%;
+				/*border:1px solid blue ;*/
+				margin-top: 1rem;
+				background-color: ghostwhite;
+			}
+			.inp{
+				width:80%;
+				height: 3rem;
+				border:1px solid gray ;
+				background-color: white;
+				border-radius:0.5rem ;
+				margin: auto;
+				display: flex;
+				align-items: center;
+			}
+			.inp input{
+				width: 70%;
+				height: 2.6rem;
+				border: none;
+				margin-left:0.6rem;
+				font-size: 1rem;
+			}
+			.inp .div1{
+				width: 2rem;
+				height: 2rem;
+				border-left:1px solid black ;
+				
+			}
+			.inp .div2{
+				width: 2rem;
+				height:2.2rem;
+				/*border:1px solid black ;*/
+			}
+			section .ba{
+				width: 100%;
+				background-color: white;
+				position: relative;
+				margin-top: 1rem;
+				border:1px solid gainsboro ;
+			}
+			section .ba .ul{
+				display: flex;
+				margin: 0;
+				width: 100%;
+				height: 3rem;
+				list-style: none;
+			}
+			section .ba .ul li{
+				flex: 1;
+				line-height: 3rem;
+				font-size:1.7rem;
+				text-align: center;
+			}
+			.yin{
+				width:100%;
+				height: 21rem;
+				position: absolute;
+				background-color: white;
+				display: none;
+			}
+			.yin ul{
+				width:85%;
+				margin: auto;
+				/*border:1px solid gold ;*/
+				list-style: none;
+			}
+			.yin ul li{
+				width: 100%;
+				height: 3rem;
+				line-height: 3rem;
+				border-bottom:1px solid gainsboro ;
+				font-size: 1.3rem;
+			}
+			.yin1{
+				width:100%;
+				height: 21rem;
+				position: absolute;
+				background-color: white;
+				display: none;
+			}
+			.yin1 ul{
+				width:85%;
+				margin: auto;
+				/*border:1px solid gold ;*/
+				list-style: none;
+			}
+			.yin1 ul li{
+				width: 100%;
+				height: 3rem;
+				line-height: 3rem;
+				border-bottom:1px solid gainsboro ;
+				font-size: 1.3rem;
+			}
+			.yin2{
+				width:100%;
+				height: 21rem;
+				position: absolute;
+				background-color: white;
+				display: none;
+			}
+			.yin2 ul{
+				width:85%;
+				margin: auto;
+				/*border:1px solid gold ;*/
+				list-style: none;
+			}
+			.yin2 ul li{
+				width: 100%;
+				height: 3rem;
+				line-height: 3rem;
+				border-bottom:1px solid gainsboro ;
+				font-size: 1.3rem;
+			}
+			.add{
+				color: #FF8A00;
+			}
+			.two{
+				width: 90%;
+				margin: auto;
+				/*border:1px solid black ;*/
+				margin-top:1rem;
+			}
+			.ull{
+				width: 100%;
+				list-style: none;
+				margin: 0;
+			}
+			.ull li{
+				width: 100%;
+				height: 10rem;
+				border-bottom: 1px solid orange;
+				display: flex;
+				margin-top: 1rem;
+			}
+			.ull li:last-child{
+				border: none;
+			}
+			.ull li .img{
+				width: 27%;
+				height:8rem;
+				/*border:1px solid black ;*/
+			}
+			.zi{
+				width:65%;
+				height: 9rem;
+			/*	border:1px solid black ;*/
+				margin-left: 1rem;
+			}
+			.zi p{
+				margin: 0;
+			}
+			.zi p strong{
+				font-size: 1.5rem;
+				font-family: "微软雅黑";
+			}
+			.zi .p1{
+				font-size: 1.4rem;
+				margin-top: 0.7rem;
+			}
+			.zi .p2{
+				margin-top: 0.4rem;
+				font-size: 1.3rem;
+				color: gray;
+			}
+			.zi .p2 span{
+				font-weight: 500;
+				color: orange;
+			}
+			footer{
+				width: 100%;
+				height: 11rem;
+				margin: auto;
+				background-color: #2F3130;
+			}
+			.fone{
+				width: 90%;
+				margin: auto;
+				opacity: 0.5;
+			}
+			.fone .p1{
+				/*margin-top: 1rem;*/
+				height: 3rem;
+				line-height: 3rem;
+				font-size: 1.5rem;
+				color: white;
+			}
+			.fone .div{
+				width: 100%;
+				height:8rem ;
+				border-top:1px solid gray ;
+				text-align: center;
+				color: white;
+			}
+			.fone .div .div1{
+				display: inline-flex;
+				margin-top: 1rem;
+			}
+			.fone .div .div1 .span1{
+				width: 2.5rem;
+			}
+			.fone .div .div1 .span2{
+				width: 4rem;
+				font-size: 1.2rem;
+			}
+			.fone .div .div2 p{
+				font-size: 1.5rem;
+				margin:0 0  0.4rem 0 ;
+			}
+			.fone .div .div2 .pp{
+				font-size:0.8rem;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<header>
+			<div class="hea">
+				<div class="img1"><a href="index.html"><img src="img/logo.jpg" class="img-responsive"width="100%"/></a></div>
+				<div class="img2">
+					<span><img src="img/my.png"class="img-responsive"/></span>
+					<span><img src="img/xiazai.png"class="img-responsive"/></span>
+				</div>
+			</div>
+		</header>
+		<section>
+			<div class="inp">
+				<input type="text" name="" id=""placeholder="请输入小区名或商圈名称" />
+				<div class="div1"></div>
+				<div class="div2"><img src="img/search_03.png" class="img-responsive"width="100%"/></div>
+			</div>
+			<div class="ba">
+				<ul class="ul">
+					<li>
+						<strong>区域</strong><span class="caret"></span>
+					</li>
+					<li>
+						<strong>价格</strong><span class="caret"></span>
+					</li>
+					<li>
+						<strong>房型</strong><span class="caret"></span>
+					</li>
+					<li>
+						<strong>更多</strong><span class="caret"></span>
+					</li>
+				</ul>
+				<div class="yin2">
+					<ul>
+						<li>不限</li>
+						<li>北京</li>
+						<li>海淀区</li>
+						<li>朝阳区</li>
+						<li>平台</li>
+						<li>吕平</li>
+						<li>自定义地区</li>
+					</ul>
+				</div>
+				<div class="yin">
+					<ul>
+						<li>不限</li>
+						<li>100万以下</li>
+						<li>100万-150万</li>
+						<li>150万-200万</li>
+						<li>200-250万</li>
+						<li>250-300万</li>
+						<li>自定义价格</li>
+					</ul>
+				</div>
+				<div class="yin1">
+					<ul>
+						<li>不限</li>
+						<li>1室</li>
+						<li>2室</li>
+						<li>3室</li>
+						<li>4室</li>
+						<li>5室</li>
+						<li>6室</li>
+					</ul>
+				</div>
+			</div>
+			<div class="two">
+				<ul class="ull">
+					<li>
+					   <div class="img"><img src="img/img1.png"width="100%"/></div>
+					   <div class="zi">
+					   	 <p><strong>西边门外大街2室1厅89平</strong></p>
+					   	 <p class="p1">南北&nbsp;&nbsp;高楼/6层</p>
+					   	 <p class="p2">签约价格：13244元/平方<span>1105万</span></p>
+					   	 <p class="p2">签约日期2020年2月21</p>
+					   </div>
+					</li>
+					<li>
+					   <div class="img"><img src="img/img6.png"width="100%"/></div>
+					   <div class="zi">
+					   	 <p><strong>金桥国际&nbsp;1室1厅63平</strong></p>
+					   	 <p class="p1">南北&nbsp;&nbsp;高楼/6层</p>
+					   	 <p class="p2">签约价格：13244元/平方<span>905万</span></p>
+					   	 <p class="p2">签约日期2020年2月21</p>
+					   </div>
+					</li>
+					<li>
+					   <div class="img"><img src="img/img3.png"width="100%"/></div>
+					   <div class="zi">
+					   	 <p><strong>花涧溪一期&nbsp;2室2厅90平</strong></p>
+					   	 <p class="p1">南北&nbsp;&nbsp;高楼/6层</p>
+					   	 <p class="p2">签约价格：13244元/平方<span>132万</span></p>
+					   	 <p class="p2">签约日期2020年2月21</p>
+					   </div>
+					</li>
+					<li>
+					   <div class="img"><img src="img/img1.png"width="100%"/></div>
+					   <div class="zi">
+					   	 <p><strong>南北通透&nbsp;1室1厅63平</strong></p>
+					   	 <p class="p1">南北&nbsp;&nbsp;高楼/6层</p>
+					   	 <p class="p2">签约价格：13244元/平方<span>905万</span></p>
+					   	 <p class="p2">签约日期2020年2月21</p>
+					   </div>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<footer>
+			<div class="fone">
+				<div class="p1">北京找房无忧网>首页</div>
+				<div class="div">
+					<div class="div1">
+						<span class="span1"><img src="img/apple.png" class="img-responsive"width="100%"/></span>
+						<span class="span2">iphone客户端</span>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<span class="span1"><img src="img/android.png" class="img-responsive"width="100%"/></span>
+						<span class="span2">android客户端</span>
+					</div>
+					<div class="div2">
+						<p>北京找房无忧房地产经纪有限公司</p>
+						<p class="pp">网络经营许可证&nbsp; 京ICP备202002221号</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</body>
+	<script src="js/jquery-3.3.1.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/remstyle.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$(".ba .ul li").click(function(){
+			$(this).toggleClass("add").siblings().removeClass("add");
+		})
+		$(".ba .ul li:first-child").eq(0).click(function(){
+			$(".yin2").slideToggle();
+			$(".yin").hide();
+			$(".yin1").hide();
+		})
+		$(".ba .ul li").eq(1).click(function(){
+			$(".yin").slideToggle();
+			$(".yin1").hide()
+			$(".yin2").hide()
+		})
+		$(".ba .ul li").eq(2).click(function(){
+			$(".yin1").slideToggle();
+			$(".yin").hide()
+			$(".yin2").hide()
+		})
+	</script>
+</html>

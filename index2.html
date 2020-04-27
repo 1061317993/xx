@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			a{
+				color: #000000;
+			}
+			header{
+				width: 100%;
+				height: 5rem;
+				background-color: #FF8A00;
+				display: flex;
+				align-items: center;
+			}
+			header div{
+				width:10rem;
+				height:4rem;
+				/*border:1px solid black ;*/
+				color:white ;
+				margin-left: 2rem;
+				
+			}
+			header div p{
+				margin: 0;
+				font-family: arial;
+				font-weight:800;
+			}
+			header div .p1{
+				font-size:2rem;
+			}
+			header div .p2{
+				font-size:1.5rem;
+			}
+			section{
+				width: 100%;
+				/*border: 1px solid black;*/
+				/*background-color: ghostwhite;*/
+				margin-top: 1rem;
+			}
+			.one{
+				width: 90%;
+				margin: auto;
+				/*border:1px solid black ;*/
+				margin-top:1rem;
+			}
+			.ull{
+				width: 100%;
+				list-style: none;
+				margin: 0;
+			}
+			.ull li{
+				width: 100%;
+				height: 11rem;
+				border-bottom: 1px solid orange;
+				display: flex;
+				margin-top: 2rem;
+			}
+			.ull li:last-child{
+				border: none;
+			}
+			.ull li .img{
+				width: 27%;
+				height:8rem;
+				/*border:1px solid black ;*/
+			}
+			.zi{
+				width:60%;
+				height: 9rem;
+			/*	border:1px solid black ;*/
+				margin-left: 1rem;
+			}
+			.zi p{
+				margin: 0;
+				overflow: hidden;
+				text-overflow:ellipsis;
+				white-space: nowrap;
+			}
+			.zi p strong{
+				font-size: 1.5rem;
+				font-family: "微软雅黑";
+			}
+			.zi .p1{
+				font-size: 1.4rem;
+				margin-top: 0.7rem;
+				display: flex;
+				justify-content: space-between;
+			}
+			.zi .p2{
+				margin-top: 0.4rem;
+				font-size: 1.3rem;
+				color: gray;
+				display: flex;
+				justify-content: space-between;
+			}
+			.zi .p1 span{
+				font-size: 1.3rem;
+				color: orange;
+				font-weight: 600;
+			}
+			.zi .p3{
+				color: #46B8DA;
+				margin-top: 0.5rem;
+			}
+			
+			.zi .p3 span{
+				margin-left: 0.5rem;
+			}
+			.zi .p3 span:first-child{
+				margin-left: 0rem;
+			}
+			footer{
+				width: 100%;
+			/*	border:1px solid black ;*/
+			}
+			footer .ul1{
+				width: 100%;
+				height: 5rem;
+				border-bottom:1px solid #FCE7CA;
+				list-style: none;
+				display: flex;
+			}
+			footer .ul1 li{
+				flex: 1;
+				text-align: center;
+				line-height: 5rem;
+				font-size: 2rem;
+				
+			}
+			.add{
+				color: #FF8A00;
+				border-bottom:2px solid  #FF8A00;
+			}
+			footer .ul2{
+				width: 85%;
+				height: 11rem;
+				/*border:1px solid black ;*/
+				list-style: none;
+                margin: auto;
+			}
+			footer .ul2 li{
+				width: 45%;
+				height: 2.5rem;
+				float: left;
+				font-size: 1.5rem;
+			}
+			footer .ul3{
+				width: 85%;
+				height: 11rem;
+				list-style: none;
+                margin: auto;
+                display: none;
+			}
+			footer .ul3 li{
+				width: 45%;
+				height: 2.5rem;
+				float: left;
+				font-size: 1.5rem;
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<div>
+				<p class="p1">热门房源</p>
+				<p class="p2">Hot house</p>
+			</div>
+		</header>
+		<section>
+			<div class="one">
+				<ul class="ull">
+					<li>
+					   <div class="img"><img src="img/img6.png"width="100%"/></div>
+					   <div class="zi">
+					   	 <p><strong>文化部最中间层 一层带车库地下室..</strong></p>
+					   	 <p class="p1">2室1厅 96m2 &nbsp;&nbsp;<span>1105万</span></p>
+					   	 <p class="p2">红雁北里 <span>14268元/平</span></p>
+					   	 <p class="p3"><span>学区房</span><span>独家</span></p>
+					   </div>
+					</li>
+					<li>
+					   <div class="img"><img src="img/img4.png"width="100%"/></div>
+					   <div class="zi">
+					   	 <p><strong>光大水墨&nbsp;&nbsp;精装复式&nbsp;稀缺房源</strong></p>
+					   	 <p class="p1">2室1厅 96m2 &nbsp;&nbsp;<span>280万</span></p>
+					   	 <p class="p2">光大水墨 <span>14268元/平</span></p>
+					   	 <p class="p3"><span>学区房</span><span>独家</span><span>满五消一</span></p>
+					   </div>
+					</li>
+					
+					<li>
+					   <div class="img"><img src="img/img7.png"width="100%"/></div>
+					   <div class="zi">
+					   	 <p><strong>南北通透两居&nbsp;&nbsp;精装修&nbsp;&nbsp;</strong></p>
+					   	 <p class="p1">2室1厅 96m2 &nbsp;&nbsp;<span>320万</span></p>
+					   	 <p class="p2">北京新天地 <span>14268元/平</span></p>
+					   	 <p class="p3"><span>地铁房</span><span>独家</span></p>
+					   </div>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<footer>
+			<ul class="ul1">
+				<li class="add">热门关注</li>
+				<li>友情链接</li>
+			</ul>
+			<ul class="ul2">
+				<li><a href="index1.html">北京二手房</a></li>
+				<li>北京链家</li>
+				<li>北京二手房价</li>
+				<li>青年家园</li>
+				<li>海淀日租房</li>
+				<li>免税房源</li>
+				<li>朝阳新房</li>
+				<li>满五年唯一免税</li>
+			</ul>
+			<ul class="ul3">
+				<li>友清链接</li>
+				<li>关于我们</li>
+				<li>北京二手房价</li>
+				<li>青年家园</li>
+				<li>友清链接</li>
+				<li>免税房源</li>
+				<li>朝阳新房</li>
+				<li>满五年唯一免税</li>
+			</ul>
+		</footer>
+	</body>
+	<script src="js/jquery-3.3.1.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/remstyle.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$(function(){
+			$(".ul1 li").click(function(){
+				$(this).addClass("add").siblings().removeClass("add")
+			})
+			$(".ul1 li:first").click(function(){
+				$(".ul2").show();
+				$(".ul3").hide();
+			})
+			$(".ul1 li:last-child").click(function(){
+				$(".ul3").show();
+				$(".ul2").hide();
+			})
+		})
+	</script>
+</html>
